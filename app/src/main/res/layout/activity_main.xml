@@ -17,6 +17,16 @@
         android:paddingBottom="9dp">
 
         <ImageView
+            android:paddingTop="4dp"
+            android:id="@+id/voiceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_keyboard_voice_black_24dp"
+            />
+
+        <ImageView
             android:id="@+id/sendBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,8 +39,8 @@
             android:id="@+id/queryEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
+
+            android:layout_toEndOf="@id/voiceBtn"
             android:layout_toStartOf="@+id/sendBtn"
             android:layout_toLeftOf="@+id/sendBtn"
             android:imeOptions="actionSend"
