@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         mSpeechRecognizer.setRecognitionListener(new RecognitionListener() {
             @Override
             public void onReadyForSpeech(Bundle bundle) {
-
+                textMessage.setText("Mendengarkan...");
             }
 
             @Override
@@ -130,8 +130,10 @@ public class MainActivity extends AppCompatActivity {
             public void onResults(Bundle bundle) {
                 ArrayList<String> speechresult = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 Log.d(TAG, "onResults: "+speechresult.size());
+
                 textMessage.setText(speechresult.get(0));
                 sendMessage(speechresult.get(0));
+
             }
 
             @Override
