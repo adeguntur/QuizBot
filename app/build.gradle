@@ -9,7 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "ClientAccessToken", "\"542677834f944830aa39aaa31a84a439\""
+        buildConfigField "String", "ClientAccessToken", "\"acces token anda\""
     }
 
 
